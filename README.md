@@ -1,6 +1,6 @@
 # Taking the Plunge: Intro to Drones & AI
 
-Welcome to the official course repository for **IDEAL Fall 2025 – Taking the Plunge: Intro to Drones & AI**.
+Welcome to the official course repository for **IDEAL Fall 2026 – Taking the Plunge: Intro to Drones & AI**.
 
 This course provides an engaging introduction to drone technology, foundational programming, and how artificial intelligence enables drones to interact intelligently with their environment. Through hands-on projects and guided modules, students will explore how drones can be programmed to navigate, recognize objects, and perform simple autonomous tasks using AI techniques.
 
