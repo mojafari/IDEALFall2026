@@ -819,11 +819,93 @@ say_hello()
 ## Functions with Parameters
 Functions can also receive information.
 
+```python
+def greet_drone(drone_name):
+    print("Hello,", drone_name)
 
+greet_drone("Tello")
+greet_drone("Drone 1")
+```
+
+The value provided to the function is called an argument.
+Functions are especially useful for drone programming because they allow us to organize complicated flight instructions.
+For example:
+
+```python
+def fly_forward():
+    tello.move_forward(100)
+```
+
+We can then use:
+
+```python
+fly_forward()
+```
+
+instead of repeatedly writing the entire command.
 
 ---
 
-# 7. Connect to the Tello
+## Your Turn
+Create a function called:
+
+```text
+show_mission_complete()
+```
+
+The function should print:
+
+```text
+Mission complete!
+```
+
+Then call the function.
+
+---
+
+
+# 14. Programming Concepts So Far
+
+Before moving to the Tello, review the four important ideas we have learned.
+## Sequence
+Instructions normally execute from top to bottom.
+
+```python
+print("Takeoff")
+print("Move")
+print("Land")
+```
+## Selection
+An if statement allows the program to make a decision.
+```python
+if battery < 20:
+    print("Battery too low")
+```
+## Repetition
+A for loop allows the program to repeat instructions.
+```python
+for i in range(4):
+    print("Moving")
+```
+## Functions
+Functions allow us to organize and reuse instructions.
+```python
+def fly_forward():
+    print("Moving forward")
+```
+These concepts will now become tools for programming a real drone.
+
+---
+
+
+# 15. Connect to the Tello
+
+Open:
+
+```text
+07_tello_connection.py
+```
+
 ## Before connecting
 
 Make sure:
@@ -834,10 +916,16 @@ Make sure:
 - The flight area is clear.
 - The battery is sufficiently charged.
 
-Run:
+Run the program in PyCharm:
+* Open 07_tello_connection.py.
+* Right-click inside the editor.
+* Select Run '07_tello_connection'.
+
+You can also click the green Run ▶ button.
+From a terminal, you can run:
 
 ```bash
-python 03_tello_connection.py
+python 07_tello_connection.py
 ```
 
 The program should connect to the drone and display the battery percentage.
@@ -849,39 +937,68 @@ Connected to Tello!
 Battery: 87 %
 ```
 
+The important programming idea is that the drone can provide information to our Python program.
+For example:
+```python
+battery = tello.get_battery()
+```
+
+The drone provides the battery information, and Python stores it in the variable battery.
+
 ---
 
-# 8. First Flight: Takeoff and Land
+# 16. First Flight: Takeoff and Land
 
 Open:
 
 ```text
-04_tello_takeoff_land.py
+08_tello_takeoff_land.py
 ```
 
-This program will:
+This program combines several programming concepts we have already learned.
+It will:
 
 1. Connect to the Tello.
 2. Check the battery.
-3. Take off.
-4. Wait three seconds.
-5. Land.
+3. Use an if statement to decide whether the battery is sufficient.
+4. Take off.
+5. Wait three seconds.
+6. Land.
 
-Run:
+Run the program from PyCharm:
+```text
+Right-click → Run '08_tello_takeoff_land'
+```
+
+Or use the terminal:
 
 ```bash
-python 04_tello_takeoff_land.py
+python 08_tello_takeoff_land.py
 ```
+
+The basic flight commands are:
+```python
+tello.takeoff()
+```
+and:
+
+```python
+tello.land()
+```
+
+The program can now turn Python instructions into physical drone actions.
+
+---
 
 ## Important
 
 Do not modify flight commands until you understand what they do.
 
-Always test flight programs in a safe, open area.
+Always test flight programs in a safe, open, approved area.
 
 ---
 
-# 9. Tello Movement
+# 17. Tello Movement
 
 Open:
 
