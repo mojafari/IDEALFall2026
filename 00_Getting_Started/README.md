@@ -6,7 +6,7 @@ Before working with computer vision, gesture recognition, pose estimation, QR co
 
 This section is designed to take you from:
 
-**Python beginner → Tello programmer → Computer vision beginner**
+**Python beginner → Python programmer → Tello programmer → Computer Vision beginner**
 
 ---
 
@@ -15,17 +15,25 @@ This section is designed to take you from:
 By completing this section, you should be able to:
 
 - Explain why programming is important for drones.
+- Understand how a computer executes a program line by line.
 - Write basic Python programs.
-- Use variables, print statements, comments, and basic control structures.
-- Identify and fix common Python errors.
+- Use variables, print statements, comments, and basic data types.
+- Understand and fix common Python errors.
+- Use `if` statements to make decisions.
+- Use `for` loops to repeat instructions.
+- Create simple Python functions to organize and reuse code.
 - Install Python packages.
 - Create and use a Python virtual environment.
+- Use PyCharm to create, run, and debug Python programs.
 - Connect a Python program to a Tello drone.
 - Check the Tello battery level.
 - Send basic flight commands to the Tello.
 - Program a simple flight path.
+- Use loops to make drone programs shorter and easier to modify.
 - Access the Tello camera.
 - Display the Tello video stream using OpenCV.
+- Understand how programming concepts connect to drone control and computer vision.
+
 
 ---
 
@@ -38,11 +46,23 @@ Python Basics
       ↓
 Python Debugging
       ↓
+How Code Executes
+      ↓
+Making Decisions with IF
+      ↓
+Repeating Code with FOR
+      ↓
+Reusable Code with Functions
+      ↓
 Tello Connection
       ↓
 Takeoff & Landing
       ↓
 Tello Movement
+      ↓
+Programming a Flight Path
+      ↓
+Using Loops for Flight Paths
       ↓
 Tello Camera
       ↓
@@ -52,6 +72,8 @@ Computer Vision Projects
       ↓
 AI-powered Drone Applications
 ```
+
+The goal is to learn programming concepts before using them to control a physical drone.
 
 ---
 
@@ -66,12 +88,14 @@ https://www.python.org/
 After installation, verify that Python is available from your terminal or command prompt.
 
 ### Windows
+Open Command Prompt or PowerShell and run:
 
 ```bash
 python --version
 ```
 
 ### macOS / Linux
+Open Terminal and run:
 
 ```bash
 python3 --version
@@ -83,17 +107,32 @@ You should see a Python version such as:
 Python 3.x.x
 ```
 
+Important: For this course, we recommend using a current Python 3 version that is compatible with the course libraries. If your instructor provides a specific Python version, use that version.
+
+
 ---
 
-# 2. Install an IDE
+# 2. Install an IDE (e.g., PyCharm)
 
-We recommend **PyCharm Community Edition** for this course.
+We recommend **PyCharm Community Edition** since we will use PyCharm as the primary development environment for this course.
 
-Download:
+Download PyCharm from:
 
 https://www.jetbrains.com/pycharm/download/
 
-You may use another Python-compatible editor if you prefer.
+Install PyCharm and open it after installation.
+PyCharm will be used throughout the course to:
+* Write Python programs.
+* Run Python programs.
+* Install Python packages.
+* Manage the project environment.
+* Debug programs.
+* View error messages.
+* Organize project files.
+
+Note: You may use the terminal when appropriate, but the examples in this course will primarily use PyCharm.
+
+Note: You may use another Python-compatible editor if you prefer.
 
 ---
 
