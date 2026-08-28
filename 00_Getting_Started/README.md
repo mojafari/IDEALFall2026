@@ -571,6 +571,234 @@ The computer follows instructions one step at a time.
 
 ---
 
+# 11. Making Decisions with if
+
+Open:
+
+```text
+04_if_statements.py
+```
+
+Programs often need to make decisions.
+For example:
+If the battery is low, do not fly.
+An if statement allows Python to check a condition.
+
+```python
+battery = 15
+
+if battery < 20:
+    print("Battery is too low for flight.")
+```
+
+Python asks:
+
+```text
+Is battery less than 20?
+        ↓
+      YES
+        ↓
+Print the warning
+```
+
+If the condition is false, the indented code is skipped.
+
+---
+
+## if and else
+We can provide two possible outcomes:
+
+```python
+battery = 80
+
+if battery < 20:
+    print("Battery is too low for flight.")
+else:
+    print("Battery level is OK.")
+```
+
+The program now behaves like this:
+
+```text
+             Battery
+                ↓
+         Is battery < 20?
+            ↙       ↘
+          YES        NO
+           ↓          ↓
+      Do not fly   Ready to fly
+```
+
+This is an important programming concept:
+Get information → Make a decision → Take an action
+Later, the Tello will provide the information.
+For example:
+
+```python
+battery = tello.get_battery()
+
+if battery < 20:
+    print("Do not fly!")
+else:
+    print("Ready for flight!")
+
+```
+
+---
+
+## Your Turn
+Create a variable called speed.
+If the speed is greater than 50, print:
+
+```text
+The drone is moving fast.
+```
+
+Otherwise, print:
+
+```text
+The drone is moving slowly.
+```
+
+Try several different speed values.
+
+
+---
+
+# 12. Repeating Code with for
+
+Open:
+
+```text
+05_for_loops.py
+```
+
+Computers are very good at repeating instructions.
+Consider this code:
+
+```python
+print("Hello")
+print("Hello")
+print("Hello")
+print("Hello")
+print("Hello")
+```
+
+This works, but it is repetitive.
+What if we wanted to print the message 100 times?
+We would not want to write 100 print() statements.
+Instead, we can use a for loop:
+
+
+```python
+for i in range(5):
+    print("Hello")
+```
+
+The loop tells Python:
+Repeat the indented instructions five times.
+
+```python
+for i in range(5):
+    print("Hello")
+```
+
+---
+
+## Understanding range()
+Consider:
+
+```python
+for i in range(5):
+    print("Loop number:", i)
+```
+
+The output is:
+
+```text
+Loop number: 0
+Loop number: 1
+Loop number: 2
+Loop number: 3
+Loop number: 4
+```
+
+Notice that Python starts counting at 0.
+range(5) produces five repetitions:
+
+```text
+0
+1
+2
+3
+4
+```
+
+---
+
+Why Are Loops Useful?
+Without a loop:
+
+```python
+print("Checking sensor...")
+print("Checking sensor...")
+print("Checking sensor...")
+print("Checking sensor...")
+```
+
+With a loop:
+
+```python
+for i in range(4):
+    print("Checking sensor...")
+```
+
+The second version is shorter and easier to modify.
+If we want 20 repetitions, we only need to change:
+
+```python
+range(4)
+```
+
+to:
+
+
+```python
+range(20)
+```
+---
+
+Your Turn
+Write a loop that prints:
+
+```text
+Drone is ready!
+```
+
+five times.
+Then change your program to print the message ten times.
+
+---
+
+
+# 13. Creating Reusable Code with Functions
+
+Open:
+
+```text
+06_functions.py
+```
+
+As programs become larger, we often want to group related instructions together.
+A function is a reusable group of instructions.
+For example:
+
+
+
+
+
+---
+
 # 7. Connect to the Tello
 ## Before connecting
 
