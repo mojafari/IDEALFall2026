@@ -136,6 +136,36 @@ Note: You may use another Python-compatible editor if you prefer.
 
 ---
 
+
+# 3. Open the Course Repository in PyCharm
+
+After downloading or cloning this repository, open the project in PyCharm.
+From the PyCharm welcome screen:
+* Select Open.
+* Locate the course repository folder.
+* Select the repository folder.
+* Click Open.
+You should see the project files in the Project panel.
+For example:
+
+IDEALFall2026/
+│
+├── README.md
+├── requirements.txt
+│
+├── 01_python_basics.py
+├── 02_debugging.py
+├── 03_how_code_executes.py
+├── 04_if_statements.py
+├── 05_for_loops.py
+├── 06_functions.py
+├── 07_tello_connection.py
+├── 08_tello_takeoff_land.py
+├── 09_tello_movement.py
+├── 10_tello_flight_path.py
+├── 11_tello_flight_path_loop.py
+└── 12_tello_video.py
+
 # 3. Create a Virtual Environment
 
 A virtual environment keeps the packages for this course separate from other Python projects on your computer.
