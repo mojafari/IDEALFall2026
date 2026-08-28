@@ -172,6 +172,55 @@ The exact repository structure may change as the course is updated.
 
 ---
 
+# 4. Create a Python Virtual Environment in PyCharm
+
+A virtual environment keeps the packages for this course separate from other Python projects on your computer.
+We recommend creating a virtual environment named:
+```bash
+.venv
+```
+## Option A: Create the Environment When Creating the Project
+If you are creating the project from scratch in PyCharm:
+* Open PyCharm.
+* Select New Project.
+* Select Python.
+* Choose your project location.
+* Under Python Interpreter, select New Virtualenv Environment.
+* Name the environment .venv.
+* Select the appropriate Python version.
+* Click Create.
+---
+## Option B: Create the Environment for an Existing Project
+If you already opened the repository:
+* Open Settings in PyCharm.
+On Windows/Linux:
+```text
+File → Settings
+```
+On macOS:
+```text
+PyCharm → Settings
+```
+* Go to:
+```text
+Project → Python Interpreter
+```
+* Select Add Interpreter.
+* Select Add Local Interpreter.
+* Choose Virtualenv Environment.
+* Select New.
+* Use:
+```bash
+.venv
+```
+as the environment location.
+* Select the appropriate Python version.
+* Click OK or Apply.
+PyCharm should now use the .venv environment for this project.
+
+---
+
+
 # 3. Create a Virtual Environment
 
 A virtual environment keeps the packages for this course separate from other Python projects on your computer.
