@@ -148,7 +148,7 @@ From the PyCharm welcome screen:
 You should see the project files in the Project panel.
 For example:
 
-```bash
+```text
 IDEALFall2026/
 │
 ├── README.md
@@ -226,7 +226,7 @@ PyCharm should now use the .venv environment for this project.
 Before installing packages, make sure PyCharm is using the correct interpreter.
 Look for the Python interpreter selector in PyCharm.
 It should show something similar to:
-```bash
+```text
 Python 3.x (.venv)
 ```
 You can also check:
@@ -235,11 +235,11 @@ Settings → Project → Python Interpreter
 ```
 The interpreter should point to your project's .venv.
 For example, on Windows it may look similar to:
-```bash
+```text
 ...\IDEALFall2026\.venv\Scripts\python.exe
 ```
 On macOS/Linux:
-```bash
+```text
 .../IDEALFall2026/.venv/bin/python
 ```
 Important: Installing a package into one Python environment does not automatically install it into every Python environment. Make sure you are installing packages into the same .venv environment that PyCharm uses to run your programs.
@@ -501,6 +501,7 @@ When you see an error:
 * Find the problem in the code.
 * Make a correction.
 * Run the program again.
+
 Learning to read error messages is an important programming skill.
 When your drone programs become more complicated, errors are normal.
 The goal is not to avoid every error.
@@ -508,8 +509,15 @@ The goal is to learn how to find and fix errors.
 
 ---
 
-# 7. Connect to the Tello
+# 10. How Does Python Execute Code?
 
+
+
+
+
+---
+
+# 7. Connect to the Tello
 ## Before connecting
 
 Make sure:
