@@ -216,7 +216,33 @@ Project → Python Interpreter
 as the environment location.
 * Select the appropriate Python version.
 * Click OK or Apply.
+
 PyCharm should now use the .venv environment for this project.
+
+---
+
+# 5. Verify the Python Interpreter in PyCharm
+
+Before installing packages, make sure PyCharm is using the correct interpreter.
+Look for the Python interpreter selector in PyCharm.
+It should show something similar to:
+```bash
+Python 3.x (.venv)
+```
+You can also check:
+```text
+Settings → Project → Python Interpreter
+```
+The interpreter should point to your project's .venv.
+For example, on Windows it may look similar to:
+```bash
+...\IDEALFall2026\.venv\Scripts\python.exe
+```
+On macOS/Linux:
+```bash
+.../IDEALFall2026/.venv/bin/python
+```
+Important: Installing a package into one Python environment does not automatically install it into every Python environment. Make sure you are installing packages into the same .venv environment that PyCharm uses to run your programs.
 
 ---
 
