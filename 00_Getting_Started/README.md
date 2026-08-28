@@ -148,6 +148,7 @@ From the PyCharm welcome screen:
 You should see the project files in the Project panel.
 For example:
 
+```bash
 IDEALFall2026/
 │
 ├── README.md
@@ -165,6 +166,11 @@ For example:
 ├── 10_tello_flight_path.py
 ├── 11_tello_flight_path_loop.py
 └── 12_tello_video.py
+```
+
+The exact repository structure may change as the course is updated.
+
+---
 
 # 3. Create a Virtual Environment
 
