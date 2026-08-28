@@ -335,7 +335,7 @@ pip install opencv-python
 ```
 
 
-Windows
+### Windows
 Activate the virtual environment first:
 
 ```bash
@@ -348,7 +348,7 @@ Then:
 pip install -r requirements.txt
 ```
 
-macOS / Linux
+### macOS / Linux
 Activate the virtual environment first:
 
 ```bash
@@ -436,7 +436,7 @@ print("Height:", height)
 
 ```
 
-Think About It
+### Think About It
 What happens if you change:
 
 ```python
