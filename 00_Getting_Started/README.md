@@ -246,66 +246,151 @@ Important: Installing a package into one Python environment does not automatical
 
 ---
 
+# 6. Install the Required Libraries
 
-# 3. Create a Virtual Environment
-
-A virtual environment keeps the packages for this course separate from other Python projects on your computer.
-
-Open a terminal in the course project folder.
-
-### Windows
-
-```bash
-python -m venv .venv
-```
-
-Activate the environment:
-
-```bash
-.venv\Scripts\activate
-```
-
-### macOS / Linux
-
-```bash
-python3 -m venv .venv
-```
-
-Activate the environment:
-
-```bash
-source .venv/bin/activate
-```
-
-After activation, your terminal should indicate that the virtual environment is active.
+This course uses several Python libraries.
+The most important libraries for this introductory section are:
+* DJITelloPy – communicates with the Tello drone.
+* OpenCV – works with images and video.
+There are two recommended ways to install packages.
 
 ---
 
-# 4. Install the Required Libraries
+## Option A: Install Packages Through PyCharm
 
-Install the packages used in this section:
+This is the recommended method for beginners.
+Using the Python Interpreter window
+* Open:
+
+```text
+Settings → Project → Python Interpreter
+```
+
+* Make sure the selected interpreter is your .venv.
+* Click the + button to add a package.
+* Search for:
+
+```text
+djitellopy
+```
+
+* Select the package.
+* Click Install Package.
+Repeat the process for:
+
+```text
+opencv-python
+```
+
+After installation, the packages should appear in the list of installed packages.
+
+
+---
+
+## Option B: Install Packages Through the PyCharm Terminal
+
+PyCharm includes a built-in terminal.
+Open:
+
+```text
+View → Tool Windows → Terminal
+```
+
+If your virtual environment is configured correctly, the terminal should use the project's .venv.
+Install DJITelloPy:
+
+```bash
+pip install djitellopy
+```
+
+Install OpenCV:
+
+```bash
+pip install opencv-python
+```
+
+You can also install all project dependencies at once:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Or install them individually:
+
+---
+
+## Option C: Install Packages Using the System Terminal
+
+You can also use your computer's normal terminal.
+If your virtual environment is activated, run:
+
+```bash
+pip install -r requirements.txt
+```
+
+Or install the packages individually:
 
 ```bash
 pip install djitellopy
 pip install opencv-python
 ```
 
+
+Windows
+Activate the virtual environment first:
+
+```bash
+.venv\Scripts\activate
+```
+
+Then:
+
+```bash
+pip install -r requirements.txt
+```
+
+macOS / Linux
+Activate the virtual environment first:
+
+```bash
+source .venv/bin/activate
+```
+
+Then:
+
+```bash
+pip install -r requirements.txt
+```
+
 ---
 
-# 5. Test Python
+# 7. Test Your Python Environment
 
 Before connecting to a drone, make sure Python is working correctly.
 
-Run:
+Open:
+
+```text
+01_python_basics.py
+```
+
+In PyCharm, right-click the file and select:
+
+```text
+Run '01_python_basics'
+```
+
+You can also use the green Run ▶ button in PyCharm.
+
+Alternatively, from the terminal:
 
 ```bash
 python 01_python_basics.py
+```
+
+On some macOS/Linux systems you may use:
+
+```bash
+python3 01_python_basics.py
 ```
 
 You should see output similar to:
@@ -319,6 +404,38 @@ Tello will fly at 30 cm/s.
 ```
 
 Try changing the values in the program and run it again.
+
+---
+
+# 8. Python Basics
+
+Open:
+
+```text
+01_python_basics.py
+```
+
+In this activity, you will learn some of the basic building blocks of Python.
+You will practice:
+* print()
+* Variables
+* Strings
+* Numbers
+* Comments
+
+For example:
+
+```python
+drone_name = "Tello"
+speed = 30
+height = 50
+
+print("Drone:", drone_name)
+print("Speed:", speed)
+print("Height:", height)
+
+```
+
 
 ---
 
