@@ -436,10 +436,24 @@ print("Height:", height)
 
 ```
 
+Think About It
+What happens if you change:
+
+```python
+speed = 30
+```
+to:
+
+```python
+speed = 50
+```
+
+How does the output change?
+
 
 ---
 
-# 6. Practice Debugging
+# 9. Practice Debugging
 
 Open:
 
@@ -451,10 +465,11 @@ This file contains several intentionally broken Python examples.
 
 Your goal is to:
 
-1. Read the error message.
-2. Identify the problem.
-3. Fix the code.
-4. Run the program again.
+1. Run the program.
+2. Read the error message.
+3. Identify the problem.
+4. Fix the code.
+5. Run the program again.
 
 Common beginner errors include:
 
@@ -465,7 +480,31 @@ Common beginner errors include:
 - Incorrect indentation
 - Mixing strings and numbers
 
+For example:
+
+```python
+print("Welcome to drone class)
+```
+contains a missing quotation mark.
+A corrected version is:
+
+```python
+print("Welcome to drone class")
+```
+
+## Debugging in PyCharm
+
+PyCharm will display errors in the editor and in the Run window.
+When you see an error:
+* Read the error message.
+* Look at the line number.
+* Find the problem in the code.
+* Make a correction.
+* Run the program again.
 Learning to read error messages is an important programming skill.
+When your drone programs become more complicated, errors are normal.
+The goal is not to avoid every error.
+The goal is to learn how to find and fix errors.
 
 ---
 
