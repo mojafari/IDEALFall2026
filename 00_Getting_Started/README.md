@@ -511,9 +511,63 @@ The goal is to learn how to find and fix errors.
 
 # 10. How Does Python Execute Code?
 
+Open:
 
+```text
+03_how_code_executes.py
+```
 
+A computer program is a sequence of instructions.
+Python normally executes statements from top to bottom.
+For example:
 
+```python
+print("Step 1")
+print("Step 2")
+print("Step 3")
+```
+
+Python executes the program like this:
+
+```text
+print("Step 1")
+      ↓
+print("Step 2")
+      ↓
+print("Step 3")
+```
+
+The output is:
+
+```text
+Step 1
+Step 2
+Step 3
+```
+
+Understanding this idea is important because programming structures such as if statements and loops can change how the program flows.
+
+## Predict Before You Run
+
+Look at this program:
+
+```python
+print("Taking off")
+
+height = 50
+
+print("Height:", height)
+
+print("Moving forward")
+
+print("Landing")
+```
+
+Before running the program, write down what you think the output will be.
+Then run the program and compare your prediction with the actual result.
+### Key Idea
+A program is not magic.
+The computer follows instructions one step at a time.
 
 ---
 
