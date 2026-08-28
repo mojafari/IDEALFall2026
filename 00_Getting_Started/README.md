@@ -793,7 +793,31 @@ As programs become larger, we often want to group related instructions together.
 A function is a reusable group of instructions.
 For example:
 
+```python
+def say_hello():
+    print("Hello, Drone!")
+```
 
+Defining the function does not run it.
+We need to call it:
+
+```python
+say_hello()
+```
+
+We can call it multiple times:
+
+```python
+say_hello()
+say_hello()
+say_hello()
+```
+
+---
+
+
+## Functions with Parameters
+Functions can also receive information.
 
 
 
