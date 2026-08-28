@@ -148,8 +148,8 @@ From the PyCharm welcome screen:
 You should see the project files in the Project panel.
 For example:
 
-```text
-IDEALFall2026/
+```bash
+IDEALFall2026/
 │
 ├── README.md
 ├── requirements.txt
