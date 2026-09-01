@@ -1003,23 +1003,23 @@ Always test flight programs in a safe, open, approved area.
 Open:
 
 ```text
-05_tello_movement.py
+09_tello_movement.py
 ```
 
-You will learn commands such as:
+You will learn basic movement commands such as:
 
 ```python
-drone.move_forward(50)
-drone.move_back(50)
+tello.move_forward(50)
+tello.move_back(50)
 
-drone.move_left(50)
-drone.move_right(50)
+tello.move_left(50)
+tello.move_right(50)
 
-drone.move_up(50)
-drone.move_down(50)
+tello.move_up(50)
+tello.move_down(50)
 
-drone.rotate_clockwise(90)
-drone.rotate_counter_clockwise(90)
+tello.rotate_clockwise(90)
+tello.rotate_counter_clockwise(90)
 ```
 
 The numbers represent distances in centimeters or angles in degrees, depending on the command.
@@ -1027,64 +1027,200 @@ The numbers represent distances in centimeters or angles in degrees, depending o
 For example:
 
 ```python
-drone.move_forward(50)
+tello.move_forward(100)
 ```
 
 means:
 
-> Move forward approximately 50 centimeters.
+> Move forward approximately 100 centimeters.
 
 And:
 
 ```python
-drone.rotate_clockwise(90)
+tello.rotate_counter_clockwise(90)
 ```
 
 means:
 
-> Rotate clockwise approximately 90 degrees.
+> Rotate counter-clockwise approximately 90 degrees.
 
 ---
 
-# 10. Flight Path Challenge
+# 18. Programming a Flight Path
 
-Modify `05_tello_movement.py` to create your own flight path.
+Open:
+
+```text
+10_tello_flight_path.py
+```
+
+Now we will combine everything we have learned to program a simple flight path.
+The challenge is:
+Can you make the Tello fly a square?
+The basic pattern is:
+
+
+```text
+
+        100 cm
+    ┌────────────┐
+    │            │
+    │            │
+100 │            │ 100
+ cm │            │ cm
+    │            │
+    └────────────┘
+        100 cm
+
+```
+
+The drone will:
+* Take off.
+* Move forward 100 cm.
+* Rotate 90 degrees.
+* Move forward 100 cm.
+* Rotate 90 degrees.
+* Move forward 100 cm.
+* Rotate 90 degrees.
+* Move forward 100 cm.
+* Rotate 90 degrees.
+* Land.
+
+At first, we will write the commands explicitly.
 
 For example:
+
+```python
+tello.move_forward(100)
+tello.rotate_counter_clockwise(90)
+
+tello.move_forward(100)
+tello.rotate_counter_clockwise(90)
+
+tello.move_forward(100)
+tello.rotate_counter_clockwise(90)
+
+tello.move_forward(100)
+tello.rotate_counter_clockwise(90)
+```
+
+### Think About It
+
+Look carefully at the code.
+
+What do you notice?
+
+The same two commands are repeated four times.
+
+This is a good programming problem:
+
+Can we make our code shorter without changing what the drone does?
+
+
+---
+
+# 19. Improving the Flight Path with a for Loop
+
+Open:
+
+```text
+11_tello_flight_path_loop.py
+```
+
+We can use the for loop we learned earlier.
+
+Instead of writing:
+
+```python
+tello.move_forward(100)
+tello.rotate_counter_clockwise(90)
+
+tello.move_forward(100)
+tello.rotate_counter_clockwise(90)
+
+tello.move_forward(100)
+tello.rotate_counter_clockwise(90)
+
+tello.move_forward(100)
+tello.rotate_counter_clockwise(90)
+```
+
+we can write:
+
+```python
+for i in range(4):
+    tello.move_forward(100)
+    tello.rotate_counter_clockwise(90)
+```
+
+This tells Python:
+Repeat these two instructions four times.
+The complete flight is now much easier to understand:
 
 ```text
 Takeoff
    ↓
-Forward
-   ↓
-Turn
-   ↓
-Forward
-   ↓
-Turn
-   ↓
-Return
+Repeat 4 times:
+   Move forward
+   Turn 90°
    ↓
 Land
 ```
 
-Try to create a square-shaped flight path.
-
-### Challenge
-
-Can you modify your program so that the drone:
-
-1. Takes off.
-2. Moves forward 50 cm.
-3. Turns 90 degrees.
-4. Moves forward 50 cm.
-5. Turns 90 degrees.
-6. Repeats the pattern.
-7. Lands.
+This is an important programming idea:
+Use computers to automate repetitive work.
 
 ---
 
-# 11. Tello Camera
+### Think About It
+What would happen if we changed:
+
+```python
+range(4)
+```
+
+to:
+
+```python
+range(4)
+```
+
+Would the drone still fly a square?
+Before testing it, predict what the drone might do.
+Then test your prediction only in a safe and approved flight area.
+
+---
+
+# 20. Flight Path Challenge
+
+Create your own flight path.
+* Start with the square example and experiment with:
+* Different distances.
+* Different angles.
+* Different numbers of repetitions.
+* Different movement commands.
+
+For example:
+
+```python
+for i in range(4):
+    tello.move_forward(75)
+    tello.rotate_counter_clockwise(90)
+```
+
+How is this different from:
+
+```python
+for i in range(4):
+    tello.move_forward(150)
+    tello.rotate_counter_clockwise(90)
+```
+
+Think about how the change affects the size of the flight path.
+
+---
+
+# 21. Tello Camera
 
 The Tello is not only a flying robot. It can also provide a live video stream.
 
