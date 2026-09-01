@@ -121,6 +121,7 @@ Download PyCharm from:
 https://www.jetbrains.com/pycharm/download/
 
 Install PyCharm and open it after installation.
+
 PyCharm will be used throughout the course to:
 * Write Python programs.
 * Run Python programs.
@@ -140,12 +141,15 @@ Note: You may use another Python-compatible editor if you prefer.
 # 3. Open the Course Repository in PyCharm
 
 After downloading or cloning this repository, open the project in PyCharm.
+
 From the PyCharm welcome screen:
 * Select Open.
 * Locate the course repository folder.
 * Select the repository folder.
 * Click Open.
+
 You should see the project files in the Project panel.
+
 For example:
 
 ```text
@@ -175,10 +179,13 @@ The exact repository structure may change as the course is updated.
 # 4. Create a Python Virtual Environment in PyCharm
 
 A virtual environment keeps the packages for this course separate from other Python projects on your computer.
+
 We recommend creating a virtual environment named:
-```bash
+
+```text
 .venv
 ```
+
 ## Option A: Create the Environment When Creating the Project
 If you are creating the project from scratch in PyCharm:
 * Open PyCharm.
@@ -193,10 +200,13 @@ If you are creating the project from scratch in PyCharm:
 ## Option B: Create the Environment for an Existing Project
 If you already opened the repository:
 * Open Settings in PyCharm.
+
 On Windows/Linux:
+
 ```text
 File → Settings
 ```
+
 On macOS:
 ```text
 PyCharm → Settings
@@ -210,7 +220,7 @@ Project → Python Interpreter
 * Choose Virtualenv Environment.
 * Select New.
 * Use:
-```bash
+```text
 .venv
 ```
 as the environment location.
@@ -224,7 +234,9 @@ PyCharm should now use the .venv environment for this project.
 # 5. Verify the Python Interpreter in PyCharm
 
 Before installing packages, make sure PyCharm is using the correct interpreter.
+
 Look for the Python interpreter selector in PyCharm.
+
 It should show something similar to:
 ```text
 Python 3.x (.venv)
@@ -234,6 +246,7 @@ You can also check:
 Settings → Project → Python Interpreter
 ```
 The interpreter should point to your project's .venv.
+
 For example, on Windows it may look similar to:
 ```text
 ...\IDEALFall2026\.venv\Scripts\python.exe
@@ -249,9 +262,11 @@ Important: Installing a package into one Python environment does not automatical
 # 6. Install the Required Libraries
 
 This course uses several Python libraries.
+
 The most important libraries for this introductory section are:
 * DJITelloPy – communicates with the Tello drone.
 * OpenCV – works with images and video.
+
 There are two recommended ways to install packages.
 
 ---
@@ -259,7 +274,8 @@ There are two recommended ways to install packages.
 ## Option A: Install Packages Through PyCharm
 
 This is the recommended method for beginners.
-Using the Python Interpreter window
+
+### Using the Python Interpreter window
 * Open:
 
 ```text
@@ -276,6 +292,7 @@ djitellopy
 
 * Select the package.
 * Click Install Package.
+
 Repeat the process for:
 
 ```text
@@ -290,6 +307,7 @@ After installation, the packages should appear in the list of installed packages
 ## Option B: Install Packages Through the PyCharm Terminal
 
 PyCharm includes a built-in terminal.
+
 Open:
 
 ```text
@@ -297,6 +315,7 @@ View → Tool Windows → Terminal
 ```
 
 If your virtual environment is configured correctly, the terminal should use the project's .venv.
+
 Install DJITelloPy:
 
 ```bash
@@ -321,6 +340,7 @@ pip install -r requirements.txt
 ## Option C: Install Packages Using the System Terminal
 
 You can also use your computer's normal terminal.
+
 If your virtual environment is activated, run:
 
 ```bash
@@ -416,6 +436,7 @@ Open:
 ```
 
 In this activity, you will learn some of the basic building blocks of Python.
+
 You will practice:
 * print()
 * Variables
@@ -486,6 +507,7 @@ For example:
 print("Welcome to drone class)
 ```
 contains a missing quotation mark.
+
 A corrected version is:
 
 ```python
@@ -495,6 +517,7 @@ print("Welcome to drone class")
 ## Debugging in PyCharm
 
 PyCharm will display errors in the editor and in the Run window.
+
 When you see an error:
 * Read the error message.
 * Look at the line number.
@@ -503,8 +526,11 @@ When you see an error:
 * Run the program again.
 
 Learning to read error messages is an important programming skill.
+
 When your drone programs become more complicated, errors are normal.
+
 The goal is not to avoid every error.
+
 The goal is to learn how to find and fix errors.
 
 ---
@@ -518,7 +544,9 @@ Open:
 ```
 
 A computer program is a sequence of instructions.
+
 Python normally executes statements from top to bottom.
+
 For example:
 
 ```python
@@ -564,9 +592,11 @@ print("Landing")
 ```
 
 Before running the program, write down what you think the output will be.
+
 Then run the program and compare your prediction with the actual result.
 ### Key Idea
 A program is not magic.
+
 The computer follows instructions one step at a time.
 
 ---
@@ -580,8 +610,11 @@ Open:
 ```
 
 Programs often need to make decisions.
+
 For example:
+
 If the battery is low, do not fly.
+
 An if statement allows Python to check a condition.
 
 ```python
@@ -630,8 +663,11 @@ The program now behaves like this:
 ```
 
 This is an important programming concept:
+
 Get information → Make a decision → Take an action
+
 Later, the Tello will provide the information.
+
 For example:
 
 ```python
@@ -648,6 +684,7 @@ else:
 
 ## Your Turn
 Create a variable called speed.
+
 If the speed is greater than 50, print:
 
 ```text
@@ -674,6 +711,7 @@ Open:
 ```
 
 Computers are very good at repeating instructions.
+
 Consider this code:
 
 ```python
@@ -685,8 +723,11 @@ print("Hello")
 ```
 
 This works, but it is repetitive.
+
 What if we wanted to print the message 100 times?
+
 We would not want to write 100 print() statements.
+
 Instead, we can use a for loop:
 
 
@@ -696,6 +737,7 @@ for i in range(5):
 ```
 
 The loop tells Python:
+
 Repeat the indented instructions five times.
 
 ```python
@@ -724,6 +766,7 @@ Loop number: 4
 ```
 
 Notice that Python starts counting at 0.
+
 range(5) produces five repetitions:
 
 ```text
@@ -754,6 +797,7 @@ for i in range(4):
 ```
 
 The second version is shorter and easier to modify.
+
 If we want 20 repetitions, we only need to change:
 
 ```python
@@ -776,6 +820,7 @@ Drone is ready!
 ```
 
 five times.
+
 Then change your program to print the message ten times.
 
 ---
@@ -790,7 +835,9 @@ Open:
 ```
 
 As programs become larger, we often want to group related instructions together.
+
 A function is a reusable group of instructions.
+
 For example:
 
 ```python
@@ -799,6 +846,7 @@ def say_hello():
 ```
 
 Defining the function does not run it.
+
 We need to call it:
 
 ```python
@@ -828,7 +876,9 @@ greet_drone("Drone 1")
 ```
 
 The value provided to the function is called an argument.
+
 Functions are especially useful for drone programming because they allow us to organize complicated flight instructions.
+
 For example:
 
 ```python
@@ -922,6 +972,7 @@ Run the program in PyCharm:
 * Select Run '07_tello_connection'.
 
 You can also click the green Run ▶ button.
+
 From a terminal, you can run:
 
 ```bash
@@ -938,6 +989,7 @@ Battery: 87 %
 ```
 
 The important programming idea is that the drone can provide information to our Python program.
+
 For example:
 ```python
 battery = tello.get_battery()
@@ -956,6 +1008,7 @@ Open:
 ```
 
 This program combines several programming concepts we have already learned.
+
 It will:
 
 1. Connect to the Tello.
@@ -1055,8 +1108,11 @@ Open:
 ```
 
 Now we will combine everything we have learned to program a simple flight path.
+
 The challenge is:
+
 Can you make the Tello fly a square?
+
 The basic pattern is:
 
 
@@ -1154,7 +1210,9 @@ for i in range(4):
 ```
 
 This tells Python:
+
 Repeat these two instructions four times.
+
 The complete flight is now much easier to understand:
 
 ```text
@@ -1168,6 +1226,7 @@ Land
 ```
 
 This is an important programming idea:
+
 Use computers to automate repetitive work.
 
 ---
@@ -1186,7 +1245,9 @@ range(6)
 ```
 
 Would the drone still fly a square?
+
 Before testing it, predict what the drone might do.
+
 Then test your prediction only in a safe and approved flight area.
 
 ---
@@ -1222,23 +1283,24 @@ Think about how the change affects the size of the flight path.
 
 # 21. Tello Camera
 
-The Tello is not only a flying robot. It can also provide a live video stream.
 
 Open:
 
 ```text
-06_tello_video.py
+12_tello_video.py
 ```
 
+The Tello is not only a flying robot. It can also provide a live video stream.
+
 This program uses:
+* djitellopy to communicate with the drone.
+* OpenCV to display the camera image.
 
-- `djitellopy` to communicate with the drone.
-- `OpenCV` to display the camera image.
+Run the program in PyCharm or from the terminal:
 
-Run:
 
 ```bash
-python 06_tello_video.py
+python 12_tello_video.py
 ```
 
 A window should appear showing the Tello's camera feed.
@@ -1253,9 +1315,13 @@ to close the video window.
 
 ---
 
-# 12. From Video to Computer Vision
+# 22. From Video to Computer Vision
 
-The basic video program contains an important idea that will be used throughout this course:
+The basic video program introduces one of the most important ideas in this course:
+
+A drone can use its camera to collect information about the world.
+
+The basic workflow is:
 
 ```text
 Tello Camera
@@ -1285,7 +1351,7 @@ Determine its location
 Move the drone
 ```
 
-or:
+Or:
 
 ```text
 Tello Camera
@@ -1303,7 +1369,7 @@ This is the foundation for the AI and computer-vision projects later in the cour
 
 ---
 
-# 13. DJITelloPy API Reference
+# 23. DJITelloPy API Reference
 
 DJITelloPy provides a Python interface for communicating with the Tello.
 
@@ -1335,6 +1401,8 @@ drone.move_down(50)
 drone.rotate_clockwise(90)
 drone.rotate_counter_clockwise(90)
 ```
+
+As you become more comfortable with programming, use the API documentation to discover additional commands rather than memorizing every command.
 
 ---
 
@@ -1368,8 +1436,8 @@ drone.land()
 Modify the program to:
 
 - Print a custom message before takeoff.
+- Check the battery before flying.
 - Change the amount of time the drone remains in the air.
-- Print the battery level.
 - Add one safe movement command.
 - Print a message when the flight is complete.
 
@@ -1384,7 +1452,7 @@ Mission complete!
 
 ---
 
-# 15. Pair Programming Challenge
+# 25. Pair Programming Challenge
 
 Work with a partner.
 
@@ -1406,12 +1474,14 @@ The Navigator:
 - Checks for errors.
 - Looks up API commands.
 - Helps plan the flight path.
+- Thinks about what the program will do before it runs.
 
 Switch roles halfway through the activity.
 
+
 ---
 
-# 16. Safety Checklist
+# 26. Safety Checklist
 
 Before every flight:
 
@@ -1427,11 +1497,11 @@ Before every flight:
 
 Never fly a drone indoors or outdoors where flight is prohibited or unsafe.
 
-Follow your instructor's classroom flight rules and applicable local regulations.
+Follow your instructor's classroom flight rules and all applicable local regulations.
 
 ---
 
-# 17. Troubleshooting
+# 27. Troubleshooting
 
 ## Python command not found
 
@@ -1459,13 +1529,67 @@ If you see:
 ModuleNotFoundError: No module named 'djitellopy'
 ```
 
-install the package:
+make sure PyCharm is using the correct .venv.
+
+Then install DJITelloPy through either:
+
+### PyCharm
+
+```text
+Settings → Project → Python Interpreter → +
+```
+Search for:
+
+```text
+djitellopy
+```
+and click Install Package.
+### Terminal
 
 ```bash
 pip install djitellopy
 ```
 
-If you are using a virtual environment, make sure it is activated.
+---
+
+## OpenCV cannot be imported
+If you see:
+
+```text
+ModuleNotFoundError: No module named 'cv2'
+```
+
+install OpenCV.
+### PyCharm
+Go to:
+```text
+Settings → Project → Python Interpreter → +
+```
+
+Search for:
+```text
+opencv-python
+```
+
+and click Install Package.
+### Terminal
+
+```bash
+pip install opencv-python
+```
+
+Note: The package is installed as opencv-python, but imported in Python as cv2.
+
+---
+
+## PyCharm is using the wrong Python interpreter
+If a package appears to be installed but Python cannot find it:
+* Open:
+  Settings → Project → Python Interpreter
+* Check the selected interpreter.
+* Make sure it is the project's .venv.
+* Install the package into that interpreter.
+* Run the program again.
 
 ---
 
@@ -1490,31 +1614,129 @@ Check:
 - OpenCV is installed.
 - No other application is using the Tello video stream.
 - The program is being run from the correct Python environment.
+- The Tello camera stream has not been left running by another program.
 
 ---
 
-# 18. What You Should Know Before Moving On
+# 28. What You Should Know Before Moving On
 
 Before starting the computer-vision projects, you should be comfortable with:
 
-- Basic Python syntax
-- Variables
-- Functions
-- Imports
-- Debugging
-- Python packages
-- Virtual environments
-- Tello connection
-- Battery checking
-- Basic flight commands
-- Tello video streaming
-- Basic OpenCV concepts
+## Python
 
-Once you are comfortable with these concepts, move on to the computer-vision projects in the main course repository.
+* Basic Python syntax.
+* Variables.
+* Strings and numbers.
+* Comments.
+* if statements.
+* for loops.
+* Functions.
+* Imports.
+* Debugging.
+* Reading error messages.
+
+## Python Environment
+
+* Installing Python.
+* Using PyCharm.
+* Running Python programs in PyCharm.
+* Using the PyCharm terminal.
+* Creating a virtual environment.
+* Installing Python packages.
+* Understanding which Python interpreter your project is using.
+
+## Tello
+
+* Connecting to the Tello.
+* Checking battery level.
+* Taking off.
+* Landing.
+* Moving the drone.
+* Rotating the drone.
+* Programming a simple flight path.
+* Using loops to automate repeated flight commands.
+
+## Computer Vision
+
+* Starting the Tello video stream.
+* Receiving video frames.
+* Displaying frames with OpenCV.
+* Understanding the basic relationship between a camera, images, computer vision, and drone control.
 
 ---
 
-## Next Steps
+
+# 29. From Programming to AI
+
+You have now built the foundation for the rest of the course.
+
+You started with:
+
+```text
+Python
+```
+
+Then learned:
+
+```text
+Python
+   ↓
+Sequence
+   ↓
+Decisions
+   ↓
+Loops
+   ↓
+Functions
+```
+
+
+Then applied those concepts to:
+
+```text
+Python
+   ↓
+Tello
+   ↓
+Flight Commands
+   ↓
+Flight Paths
+```
+
+
+Then added:
+
+
+```text
+Tello
+   ↓
+Camera
+   ↓
+OpenCV
+```
+
+
+The next step is to teach the computer to understand what the camera sees:
+
+```text
+Camera
+   ↓
+Image
+   ↓
+Computer Vision
+   ↓
+Detection
+   ↓
+Decision
+   ↓
+Drone Action
+```
+
+This leads directly to the projects in the main course repository.
+
+---
+
+# 30. Next Steps
 
 After completing this section, continue with the project folders:
 
@@ -1528,7 +1750,7 @@ The goal is to move from **programming the drone directly** to **programming the
 
 ---
 
-## Resources
+# 31. Resources
 
 - Python: https://www.python.org/
 - PyCharm: https://www.jetbrains.com/pycharm/download/
