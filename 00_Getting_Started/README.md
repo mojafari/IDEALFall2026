@@ -1406,7 +1406,7 @@ As you become more comfortable with programming, use the API documentation to di
 
 ---
 
-# 14. Mini-Project: "Hello, Drone!"
+# 24. Mini-Project: "Hello, Drone!"
 
 Create a new Python file called:
 
