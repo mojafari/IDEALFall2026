@@ -15,6 +15,7 @@ This course provides an engaging introduction to drone technology, foundational 
 
 This repository contains modular subfolders that align with different hands-on projects in the course:
 
+- [`00_Getting_Started`](./00_Getting_Started) – Learn how to write Python programs and use Python to communicate with a DJI Tello drone.
 - [`Tello_Aruco`](./Tello_Aruco) – ArUco marker tracking with the Tello drone.
 - [`Tello_GestureCTRL`](./Tello_GestureCTRL) – Gesture-based control of the Tello using computer vision.
 - [`Tello_PoseCTRL`](./Tello_PoseCTRL) – Pose-based control of the Tello using computer vision.
