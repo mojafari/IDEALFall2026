@@ -1182,7 +1182,7 @@ range(4)
 to:
 
 ```python
-range(4)
+range(6)
 ```
 
 Would the drone still fly a square?
