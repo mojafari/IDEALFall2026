@@ -161,9 +161,8 @@ Learn what makes a prompt useful.
 
 See:
 
-```text
-02_prompting_basics.md
-```
+[`02_prompting_basics.md`](./02_prompting_basics.md) 
+
 
 ---
 
@@ -173,9 +172,8 @@ Learn how to ask AI to make a controlled change to an existing program.
 
 See:
 
-```text
-03_ai_code_modification.md
-```
+[`03_ai_code_modification.md`](./03_ai_code_modification.md) 
+
 
 ---
 
@@ -185,9 +183,8 @@ Use AI to help transform a drone flight path from a square into a triangle.
 
 See:
 
-```text
-04_square_to_triangle.md
-```
+[`04_square_to_triangle.md`](./04_square_to_triangle.md) 
+
 
 ---
 
@@ -197,9 +194,8 @@ Learn how to use AI to help understand Python errors.
 
 See:
 
-```text
-05_ai_debugging.md
-```
+[`05_ai_debugging.md`](./05_ai_debugging.md) 
+
 
 ---
 
@@ -209,9 +205,8 @@ Learn how to ask AI to review code without simply rewriting it.
 
 See:
 
-```text
-06_ai_code_review.md
-```
+[`06_ai_code_review.md`](./06_ai_code_review.md) 
+
 
 ---
 
@@ -229,9 +224,8 @@ Large Language Models
 
 See:
 
-```text
-07_ai_vs_ml.md
-```
+[`07_ai_vs_ml.md`](./07_ai_vs_ml.md) 
+
 
 ---
 
@@ -241,9 +235,8 @@ Combine prompting, programming, and drone concepts in a small project.
 
 See:
 
-```text
-08_ai_drone_challenge.md
-```
+[`08_ai_drone_challenge.md`](./08_ai_drone_challenge.md) 
+
 
 ---
 
