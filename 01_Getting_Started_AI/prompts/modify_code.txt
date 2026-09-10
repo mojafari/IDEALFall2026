@@ -1,0 +1,23 @@
+I am a first-year college student learning Python and drone programming.
+
+Here is my existing program:
+
+[PASTE CODE HERE]
+
+I want to change it so that:
+
+[DESCRIBE THE CHANGE]
+
+Requirements:
+
+- [REQUIREMENT 1]
+- [REQUIREMENT 2]
+- [REQUIREMENT 3]
+
+Keep the existing code unchanged wherever possible.
+
+First explain your proposed changes.
+
+Then provide the modified code.
+
+Finally, explain every important change you made.
