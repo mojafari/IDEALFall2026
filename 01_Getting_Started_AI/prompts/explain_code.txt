@@ -1,0 +1,18 @@
+I am a first-year college student learning Python and drone programming.
+
+Here is my program:
+
+[PASTE CODE HERE]
+
+Explain this program step by step.
+
+For each important section:
+
+1. Explain what the code does.
+2. Explain why it is needed.
+3. Explain what happens to the drone.
+4. Explain the Python concept being used.
+
+Use beginner-friendly language.
+
+Do not modify or rewrite the program.
