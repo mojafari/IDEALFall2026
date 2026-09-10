@@ -150,9 +150,8 @@ Learn how to ask AI to explain a program you already understand.
 
 See:
 
-```text
-01_ai_code_explanation.md
-```
+[`01_ai_code_explanation.md`](./01_ai_code_explanation.md) 
+
 
 ---
 
