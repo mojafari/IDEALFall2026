@@ -55,11 +55,11 @@ Create this table:
 | AI Suggestion / Output To Evaluate                                | Do I Agree? (Yes / No / Partial) | How Can I Verify It? (Sources, Tests, Logic)       |
 |:------------------------------------------------------------------|:---------------------------------|:----------------------------------------------------|
 | Example: "The project will take 4 weeks using Python."            |                                  | Run a small proof-of-concept; check past team velocity. |
+|  ------                  |                                  |                                                     |
 |                                                                   |                                  |                                                     |
 |                                                                   |                                  |                                                     |
 |                                                                   |                                  |                                                     |
 |                                                                   |                                  |                                                     |
-
 
 
 The purpose is to make you evaluate AI suggestions instead of accepting them automatically.
