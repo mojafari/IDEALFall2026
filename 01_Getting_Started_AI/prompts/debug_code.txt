@@ -1,0 +1,27 @@
+I am a first-year college student learning Python.
+
+I expected my program to:
+
+[EXPECTED BEHAVIOR]
+
+Instead, this happened:
+
+[ACTUAL BEHAVIOR]
+
+Here is the exact error message:
+
+[ERROR MESSAGE]
+
+Here is my code:
+
+[CODE]
+
+Please:
+
+1. Explain what the error means.
+2. Identify the most likely cause.
+3. Explain how I can fix it.
+4. Explain the Python concept involved.
+5. Tell me how I could recognize this type of problem in the future.
+
+Do not rewrite the entire program.
