@@ -146,7 +146,7 @@ Do not assume the AI is correct.
 Complete this table:
 
 
-| Code | My Understanding | AI's Explanation | Agree? |
+| Code | My Understanding | AI's Explanation | Agree? (Yes / No / Partial)|
 | -------- | -------- | -------- | -------- |
 | tello.connect()   |    |    |    |
 | tello.takeoff()   |    |    |    |
