@@ -1,0 +1,22 @@
+I am learning Python, geometry, and drone programming.
+
+I am trying to solve this problem:
+
+[DESCRIBE PROBLEM]
+
+My reasoning is:
+
+[MY REASONING]
+
+Do not solve the problem immediately.
+
+First evaluate my reasoning.
+
+Tell me:
+
+1. What I got right.
+2. What I got wrong.
+3. What I should reconsider.
+4. Why.
+
+Only after evaluating my reasoning, show me a possible solution.
