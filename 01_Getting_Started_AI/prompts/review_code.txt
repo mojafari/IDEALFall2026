@@ -1,0 +1,18 @@
+I am learning Python and drone programming.
+
+Review the following program:
+
+[PASTE CODE HERE]
+
+Do not rewrite the program.
+
+Instead:
+
+1. Identify possible programming errors.
+2. Identify possible logic errors.
+3. Identify assumptions that may be incorrect.
+4. Identify anything that could be unsafe for a physical drone.
+5. Identify unnecessary complexity.
+6. Suggest what I should test.
+
+Explain the reasoning behind each concern.
