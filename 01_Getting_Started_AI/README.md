@@ -103,8 +103,11 @@ This section builds directly on the programs in:
 In particular, we will use:
 
 [`09_tello_movement.py`](../00_Getting_Started/09_tello_movement.py) 
+
 [`10_tello_flight_path.py`](../00_Getting_Started/10_tello_flight_path.py) 
+
 [`11_tello_flight_path_loop.py`](../00_Getting_Started/11_tello_flight_path_loop.py) 
+
 [`12_tello_video.py`](../00_Getting_Started/12_tello_video.py) 
 
 
