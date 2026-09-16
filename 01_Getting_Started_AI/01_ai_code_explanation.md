@@ -34,7 +34,7 @@ Write down your answers.
 
 ## Step 2: Ask AI to Explain One Line
 
-Open ChatGPT.
+Open ChatGPT (or Microsoft Copilot).
 
 Use the following prompt:
 
@@ -90,7 +90,7 @@ Copy the contents of:
 [`09_tello_movement.py`](../00_Getting_Started/09_tello_movement.py)
 
 
-into ChatGPT.
+into ChatGPT (or Microsoft Copilot).
 
 Use:
 
