@@ -20,7 +20,7 @@ Instead, we will begin with something you can use immediately:
 
 AI as a programming assistant.
 
-You will use an AI assistant such as ChatGPT to:
+You will use an AI assistant such as ChatGPT (or Microsoft Copilot) to:
 * Explain Python code.
 * Explain drone-control code.
 * Answer questions about programming concepts.
