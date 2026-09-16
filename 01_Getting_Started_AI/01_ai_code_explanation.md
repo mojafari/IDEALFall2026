@@ -12,9 +12,9 @@ We are starting with explanation rather than code generation.
 
 Open:
 
-````text
-00_Getting_Started/09_tello_movement.py
-````
+
+[`09_tello_movement.py`](../00_Getting_Started/09_tello_movement.py)
+
 
 Look at the program before using AI.
 
@@ -86,9 +86,9 @@ Explain it using a simple example involving the Tello drone.
 
 Copy the contents of:
 
-````text
-09_tello_movement.py
-````
+
+[`09_tello_movement.py`](../00_Getting_Started/09_tello_movement.py)
+
 
 into ChatGPT.
 
