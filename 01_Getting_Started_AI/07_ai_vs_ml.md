@@ -104,7 +104,7 @@ Prediction: Person
 
 ## Generative AI
 
-ChatGPT is an example of generative AI.
+ChatGPT (or Microsoft Copilot) is an example of generative AI.
 
 Generative AI can produce new content such as:
 
