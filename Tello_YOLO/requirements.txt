@@ -1,0 +1,4 @@
+djitellopy
+opencv-python>=4.7
+ultralytics
+lap
